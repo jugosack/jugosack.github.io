@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jugosack/jugosack.github.io/issues"
   },
-  "homepage": "https://github.com/jugosack/jugosack.github.io#readme"
+  "homepage": "https://github.com/jugosack/jugosack.github.io#readme",
+  "devDependencies": {
+    "hint": "^7.1.3"
+  }
 }
