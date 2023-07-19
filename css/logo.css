@@ -1,0 +1,57 @@
+.logo-image {
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+}
+
+.toolbar > nav > a {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  height: 90px;
+  margin-top: -10px;
+}
+
+.logo-text {
+  margin-left: -20px;
+}
+
+/* Responsive Styles for max width 425px */
+@media (max-width: 425px) {
+  /* .toolbar{
+    position:fixed;
+  } */
+  .logo-image {
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+  }
+
+  .toolbar > nav > a {
+    padding-left: 5px;
+    height: 70px;
+    margin-top: 0;
+    margin-left: -25px;
+  }
+
+  .logo-text {
+    margin-top: -20px;
+    margin-left: 0;
+  }
+
+  .toolbar > nav,
+  .toolbar > nav > button {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: -5px;
+    color: #6070ff;
+    margin-top: -30px;
+    position: fixed;
+  }
+
+  .mobilemenu {
+    margin-left: 280px;
+  }
+}

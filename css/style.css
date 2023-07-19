@@ -1,0 +1,1456 @@
+/* setup  font and background color of all element */
+body {
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  background-color: #e5e5e5;
+}
+
+/* main styling grid */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 375px;
+  background-color: #f7f7f9;
+  row-gap: 0;
+}
+
+/* headline elements */
+.headline {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/background_final_one.png");
+  background-repeat: no-repeat;
+  height: 718px;
+  padding-top: 58px;
+  background-size: 100% auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* header toolbar */
+.toolbar > nav,
+.toolbar > nav > button {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 10px;
+  color: #6070ff;
+
+  /* position: fixed; */
+}
+
+/* toolar mobile view version for 768px and below */
+
+.desktopmenu,
+.desktoppic {
+  display: none;
+}
+
+/* client list item properties */
+ul.client > li {
+  list-style: none;
+  display: flex;
+  margin-left: 0;
+  font-size: 13px;
+  margin-right: 12px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* tag style */
+ul.tags > li {
+  list-style: none;
+  display: flex;
+  color: #6070ff;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  height: 24px;
+  margin-right: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: #ebebff;
+  padding-top: 6px;
+}
+
+/* unorder list style */
+ul.buttongroup > li {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+ul.techstack > li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* input name and email style */
+.contactname,
+.contactemail {
+  height: 48px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #cfd8dc;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+/* card two desktop version */
+.workscard:nth-of-type(n + 2) > section > ul.client > li.type:nth-of-type(2) {
+  display: none;
+}
+
+/* hide Full stack dev */
+.workscard:nth-of-type(n + 2) > section > ul.client > li:nth-of-type(4) {
+  display: none;
+}
+
+/* hide desktop detail */
+.workscard:nth-of-type(n + 2) > section > p:nth-of-type(2) {
+  display: none;
+}
+
+/* hide desktop tags */
+.workscard:nth-of-type(n + 2) > section > ul.tags > li:nth-of-type(2) {
+  /* display: none; */
+}
+
+/* hide desktop title */
+.workscard:nth-of-type(n + 2) > section > h2:nth-of-type(2) {
+  display: none;
+}
+
+/* hide desktop year for card four */
+.workscard:nth-of-type(4) > section > ul.client > li:nth-of-type(6) {
+  display: none;
+}
+
+/* content section */
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* size and color for title */
+.title {
+  font-size: 40px;
+  color: #172b4d;
+  font-weight: 700;
+}
+
+/* size and color for detail content */
+.detail {
+  font-size: 16px;
+  color: #344563;
+  font-weight: 400;
+}
+
+/* size and color for connect text */
+.connect {
+  font-size: 16px;
+  color: #7f8cff;
+  font-weight: 400;
+}
+
+/* my logo style */
+
+.toolbar > nav > a {
+  color: #6070ff;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* social media button group style */
+
+ul.buttongroup > li > a {
+  color: #505f79;
+  margin-left: 4px;
+  margin-right: 4px;
+  list-style: none;
+}
+
+/* My logo hover and active  */
+
+.toolbar > nav > a:hover {
+  color: #040b48;
+}
+
+.toolbar > nav > a:active {
+  color: #ef1065;
+}
+
+/* implement hover and active for button_group */
+ul.buttongroup > li > a:hover {
+  color: #6070ff;
+}
+
+ul.buttongroup > li > a:active {
+  color: #ef1065;
+}
+
+/* implement hover and active for  menu bar */
+.toolbar > nav > button:hover {
+  color: #0d1b97;
+}
+
+.toolbar > nav > button:active {
+  color: #ef1065;
+}
+
+/* list item style */
+.buttongroup {
+  display: inline-flex;
+  list-style-type: none;
+  justify-content: start;
+  padding: 0;
+  margin: 0;
+}
+
+/* adjust button border and background */
+.mobilemenu {
+  background-color: transparent;
+  border: none;
+
+  /* margin-left: 280px */
+}
+
+/* Style image properies */
+img {
+  width: 295px;
+  height: 200px;
+  border-radius: 8px;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Style card Properties */
+
+.workscard {
+  display: grid;
+  background-color: white;
+  margin-left: 24px;
+  width: 327px;
+  height: 540px;
+  border-radius: 16px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dfe1e6;
+  margin-bottom: 75px;
+}
+
+/* project title properties */
+
+.projecttitle {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  margin: 12px 16px 0;
+}
+
+.client {
+  display: inline-flex;
+  list-style-type: none;
+  justify-content: start;
+  margin-left: 0;
+  margin-top: 10px;
+  padding-left: 16px;
+  margin-bottom: 0;
+}
+
+/* Style type  */
+
+.type {
+  font-weight: 600;
+  line-height: 16px;
+}
+
+/* style tech and year class */
+.tech,
+.year {
+  color: #7a869a;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+/* style project detail */
+
+.projectdetail {
+  text-align: left;
+  padding-top: 0;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  padding-bottom: 0;
+  margin: 20px 16px 0;
+}
+
+/* button tags style */
+.tags {
+  display: inline-flex;
+  list-style-type: none;
+  justify-content: start;
+  margin-left: 0;
+  margin-top: 12px;
+  padding-left: 16px;
+  margin-bottom: 0;
+}
+
+.projectbutton {
+  margin-top: 20px;
+  margin-left: 16px;
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: 17px;
+  font-weight: 500;
+  width: 124px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #6070ff;
+  color: #396df2;
+  background-color: #fff;
+}
+
+/* implement works card button hover and active */
+.projectbutton:hover {
+  color: #040b48;
+}
+
+.projectbutton:active {
+  color: #ef1065;
+}
+
+/* Style about me */
+.aboutme {
+  display: flex;
+  flex-direction: column;
+}
+
+/* about myself style */
+.aboutmyself {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 325px;
+  border-top-right-radius: 75px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  padding-right: 24px;
+  padding-left: 24px;
+  height: 1250px;
+}
+
+/* style about myself title */
+
+.abouttitle {
+  margin-top: 114px;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  font-weight: 700;
+  width: 200px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* style about myself detail */
+.aboutdetail {
+  font-size: 16px;
+  line-height: 24px;
+  width: 300px;
+  color: #344563;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* about myself resume button style */
+
+.aboutresumebutton {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: 17px;
+  font-weight: 500;
+  width: 150px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #6070ff;
+  color: #396df2;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* implement about resume me button hover and active */
+.aboutresumebutton:hover {
+  color: #040b48;
+}
+
+.aboutresumebutton:active {
+  color: #ef1065;
+}
+
+/* styling tech detail about myself  */
+.techstack {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 12px;
+  padding-left: 12px;
+}
+
+.techstacklang {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 12px;
+  padding-left: 0;
+}
+
+.techstacklang_1 {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 12px;
+  padding-left: 0;
+}
+
+.techstackframe {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 12px;
+  padding-left: 0;
+}
+
+.techstackframe_1 {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 12px;
+  padding-left: 0;
+}
+
+.techstackskill {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 12px;
+  padding-left: 0;
+}
+
+.techstackskill_1 {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 12px;
+  padding-left: 0;
+}
+
+/* language style */
+.aboutlanguage {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  display: inline;
+  color: #000;
+  padding-right: 200px;
+}
+
+/* direction icons gaps style */
+.langicon {
+  /* padding-left: 150px; */
+  color: #8d949c;
+  width: 2px;
+}
+
+.aboutlanguage_1 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  display: inline;
+  color: #000;
+  padding-right: 190px;
+}
+
+.frameicon {
+  /* padding-left: 140px; */
+  color: #8d949c;
+  width: 2px;
+}
+
+.aboutlanguage_2 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  display: inline;
+  color: #000;
+  padding-right: 250px;
+}
+
+.skillicon {
+  /* padding-left: 203px; */
+  color: #8d949c;
+  width: 2px;
+}
+
+/* style about myself programming language  */
+ul.techstacklang > li.langdetail {
+  display: flex;
+  justify-self: start;
+  flex-direction: row;
+  background-color: #f7f7f9;
+  height: 66.72px;
+  border-radius: 8px;
+  color: #253858;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul.techstacklang_1 > li.langdetail {
+  display: flex;
+  justify-self: start;
+  flex-direction: row;
+  background-color: #f7f7f9;
+  height: 66.72px;
+  border-radius: 8px;
+  color: #253858;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul.techstackframe > li.langdetail {
+  display: flex;
+  justify-self: start;
+  flex-direction: row;
+  background-color: #f7f7f9;
+  height: 66.72px;
+  border-radius: 8px;
+  color: #253858;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul.techstackframe_1 > li.langdetail {
+  display: flex;
+  justify-self: start;
+  flex-direction: row;
+  background-color: #f7f7f9;
+  height: 66.72px;
+  border-radius: 8px;
+  color: #253858;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul.techstackskill > li.langdetail {
+  display: flex;
+  justify-self: start;
+  flex-direction: row;
+  background-color: #f7f7f9;
+  height: 66.72px;
+  border-radius: 8px;
+  color: #253858;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul.techstackskill_1 > li.langdetail {
+  display: flex;
+  justify-self: start;
+  flex-direction: row;
+  background-color: #f7f7f9;
+  height: 66.72px;
+  border-radius: 8px;
+  color: #253858;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Style tech stack images */
+
+.techimage {
+  width: 48px;
+  height: 48px;
+  margin-top: 10px;
+  margin-left: 16px;
+}
+
+/* image and language gap style */
+.langgap {
+  margin-top: 24px;
+  margin-left: 16px;
+}
+
+/* style hr element */
+hr {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #dfe1e6;
+  margin-bottom: 6px;
+}
+
+/* contact form styling  */
+
+/* footer style */
+footer {
+  width: 100%;
+  height: 770px;
+  display: flex;
+  flex-direction: column;
+  background: url("../images/footer-layer.png") right top;
+  background-repeat: no-repeat;
+  background-size: 75% 90%, 100%;
+  background-color: #6070ff;
+  background-position-y: top 21px;
+  border-top-left-radius: 75px;
+}
+
+/* contact me style */
+.contactme {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #fff;
+  margin-top: 110px;
+  margin-bottom: 0;
+}
+
+/* contact detail style */
+.contactdetail {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  margin-left: 24px;
+  width: 290px;
+  text-align: center;
+  align-content: center;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* field set style */
+.formgroup {
+  display: flex;
+  height: 340px;
+  flex-direction: column;
+  align-content: space-around;
+  margin-top: 60px;
+  border: none;
+}
+
+/* contact message style */
+.contactmessage {
+  height: 170px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: gray;
+  border: 1px solid #cfd8dc;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-top: 15px;
+}
+
+/* contact submit style */
+.contactsubmit {
+  height: 48px;
+  width: 140px;
+  border-radius: 8px;
+  padding: 12px 16px;
+  border: 1px solid #cfd8dc;
+  color: #6070ff;
+  background-color: #fff;
+  font-size: 17px;
+  margin-top: 22px;
+}
+
+/* input name and email placeholder style */
+.contactname::placeholder,
+.contactemail::placeholder {
+  color: gray;
+  opacity: 1;
+  padding-right: 20px;
+}
+
+/* implement about  get in touch button hover and submit */
+.contactsubmit:hover {
+  color: #040b48;
+}
+
+.contactsubmit:active {
+  color: #ef1065;
+}
+
+/* container desktop version applied 768px and above */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 100%;
+    background-color: #f7f7f9;
+    margin: 0;
+  }
+
+  body {
+    background-color: #f7f7f9;
+  }
+
+  .headline {
+    background-image: url("../images/desktop_header_one.png");
+    background-repeat: no-repeat;
+    height: 916px;
+    background-color: white;
+    background-position-y: 118px;
+    margin-bottom: 142px;
+    border-bottom-left-radius: 100px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .toolbar > nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+
+  .toolbar {
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  /* hide menu bar */
+  .mobilemenu,
+  .mobilemenu > i {
+    display: none;
+  }
+
+  /* styling my logo  */
+  .toolbar > nav > a {
+    padding-left: 50px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  /* desktop menu position */
+  .desktopmenu {
+    margin-right: 100px;
+    padding-top: 20px;
+  }
+
+  .poptag > li {
+    margin-bottom: 5px;
+  }
+
+  /* desktop menu list item style */
+  ul.desktopmenu > li {
+    list-style: none;
+    display: flex;
+    margin-left: 32px;
+  }
+
+  ul.desktopmenu > li > a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #344563;
+    align-items: flex-end;
+    align-self: flex-end;
+  }
+
+  /* implementing hover and active for desktop menu */
+  ul.desktopmenu > li > a:hover {
+    color: #0b1ec9;
+  }
+
+  ul.desktopmenu > li > a:active {
+    color: #ef1065;
+  }
+
+  .content {
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title {
+    font-size: 48px;
+    color: #091e42;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .detail {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  .workscard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 496px;
+    border-radius: 24px;
+    border-style: solid;
+    margin-bottom: 75px;
+  }
+
+  img {
+    width: 80%;
+    height: 448px;
+    border-radius: 8px;
+    margin: 24px;
+  }
+
+  .subsection {
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+
+  .projecttitle {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    margin-bottom: 20px;
+  }
+
+  /* client list item properties */
+  ul.client > li {
+    font-size: 18px;
+    margin-right: 12px;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+  }
+
+  /* styling tags */
+  ul.tags {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  /* ordering works card  element */
+  .workscard:nth-child(odd) > .imagesection {
+    order: 2;
+  }
+
+  /* hide mobile pitures on desktop */
+  .mobilepic {
+    display: none;
+  }
+
+  .desktoppic {
+    display: block;
+  }
+
+  /* hide canopy */
+  .workscard:nth-of-type(n + 2) > section > ul.client > li.type:nth-of-type(1) {
+    display: block;
+  }
+
+  /* hide back end */
+  .workscard:nth-of-type(n + 2) > section > ul.client > li:nth-of-type(3) {
+    display: block;
+  }
+
+  /* hide detail of posts */
+  .workscard:nth-of-type(n + 2) > section > p:nth-of-type(1) {
+    display: none;
+  }
+
+  /* hide project title for starting from 3 */
+  .workscard:nth-of-type(n + 2) > section > h2:nth-of-type(1) {
+    display: none;
+  }
+
+  /* hide mobie year of cardfour */
+  .workscard:nth-of-type(4) > section > ul.client > li:nth-of-type(5) {
+    display: none;
+  }
+
+  /* button color for card three  */
+
+  .workscard:nth-of-type(2) > section > .projectbutton {
+    background-color: #fff;
+    color: #396df2;
+  }
+
+  /* implement works card button hover and active */
+  .workscard:nth-of-type(2) > section > .projectbutton:hover {
+    color: #040b48;
+  }
+
+  .workscard:nth-of-type(2) > section > .projectbutton:active {
+    color: #ef1065;
+  }
+
+  .aboutmyself {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    width: 96%;
+    border-top-right-radius: 75px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    height: 750px;
+  }
+
+  /* column one style */
+  .aboutcol1 {
+    align-items: center;
+    padding-left: 130px;
+  }
+
+  /* icons marign */
+  .abouticonsection {
+    margin-bottom: 10px;
+  }
+
+  /* column two style */
+  .aboutcol2 {
+    align-items: center;
+  }
+
+  /* detail style */
+  .aboutdetail {
+    width: 400px;
+  }
+
+  /* direction icon position */
+  .langicon {
+    /* padding-left: 340px; */
+  }
+
+  /* icons postion  */
+
+  .techstack {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: 130px;
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  .techstacklang {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 12px;
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  .techstackframe {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 12px;
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  .techstackskill {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 12px;
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  .techstacklang_1 {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 12px;
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  .techstackframe_1 {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 12px;
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  .techstackskill_1 {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 12px;
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  ul.techstacklang > li.langdetail {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 122px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    padding-right: 0;
+  }
+
+  ul.techstackframe > li.langdetail {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 122px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    padding-right: 0;
+  }
+
+  ul.techstackskill > li.langdetail {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 122px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    padding-right: 0;
+  }
+
+  ul.techstacklang_1 > li.langdetail {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 122px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    padding-right: 0;
+  }
+
+  ul.techstackframe_1 > li.langdetail {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 122px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    padding-right: 0;
+  }
+
+  ul.techstackskill_1 > li.langdetail {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 122px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    padding-right: 0;
+  }
+
+  /* programming language gaps */
+  .langgap {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+
+  /* margin for language detail */
+  .aboutlanguage {
+    margin-left: 18px;
+    padding-right: 350px;
+  }
+
+  .aboutlanguage_1 {
+    margin-left: 18px;
+    padding-right: 340px;
+  }
+
+  /* framework icon position */
+  .frameicon {
+    /* padding-left: 330px; */
+  }
+
+  .aboutlanguage_2 {
+    margin-left: 18px;
+    padding-right: 400px;
+  }
+
+  /* skll icon positon */
+  .skillicon {
+    /* padding-left: 390px; */
+  }
+
+  hr {
+    width: 500px;
+  }
+
+  .contactfooter {
+    width: 100%;
+    height: 900px;
+    background: url("../images/desktop_footer.png") right top no-repeat;
+    background-size: 85% 95%, 100%;
+    background-color: #6070ff;
+    background-position-y: 140px;
+    border-top-left-radius: 150px;
+
+    /* margin-top: -270px; */
+    margin-bottom: 0;
+  }
+
+  .contactme {
+    margin-top: 150px;
+  }
+
+  /* contact detail style */
+  .contactdetail {
+    text-align: center;
+    width: 490px;
+    align-self: center;
+    align-content: center;
+  }
+
+  .footerform {
+    align-self: center;
+  }
+
+  .formgroup {
+    height: 550px;
+    width: 447px;
+    margin-top: 20px;
+    border: none;
+  }
+
+  .contactsubmit {
+    align-self: center;
+  }
+
+  /* switching elments  which are  in mobile view  display none */
+  .workscard:nth-of-type(n + 2) > section > ul.client > li.type:nth-of-type(2) {
+    display: block;
+  }
+
+  /* hide Full stack dev */
+  .workscard:nth-of-type(n + 2) > section > ul.client > li:nth-of-type(4) {
+    display: block;
+  }
+
+  /* hide desktop detail */
+  .workscard:nth-of-type(n + 2) > section > p:nth-of-type(2) {
+    display: block;
+  }
+
+  /* hide desktop tags */
+  .workscard:nth-of-type(n + 2) > section > ul.tags > li:nth-of-type(2) {
+    display: block;
+  }
+
+  /* hide desktop title */
+  .workscard:nth-of-type(n + 2) > section > h2:nth-of-type(2) {
+    display: block;
+  }
+
+  /* hide desktop year for card four */
+  .workscard:nth-of-type(4) > section > ul.client > li:nth-of-type(6) {
+    display: block;
+  }
+
+  /* hide mobile option */
+  .mobileoption {
+    display: none;
+  }
+
+  /* popup windows  desktop */
+  .popup {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    padding-top: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .popupdetail {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    max-width: 900px;
+    height: 150px;
+  }
+
+  .popheader {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+
+  .popclient {
+    font-size: 16px;
+    height: 16px;
+    margin-top: 30px;
+    padding-left: 35px;
+  }
+
+  .poppic {
+    margin-left: 37px;
+    margin-right: 15px;
+    width: 90%;
+    height: 50%;
+    padding-top: 25px;
+  }
+
+  .popcolumn {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .popprojectdetail {
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+    padding-left: 20px;
+  }
+
+  .poptag {
+    flex-direction: row;
+    margin-top: -5px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 24px;
+  }
+
+  .poptagwrap {
+    padding-right: 40px;
+  }
+
+  .popmobiledetail {
+    display: none;
+  }
+
+  .popdesktopdetail {
+    display: block;
+  }
+}
+
+.popmobiledetail {
+  display: block;
+}
+
+/* scaling animation */
+.title:hover {
+  transform: scale(0.86);
+}
+
+/* mobile menu option */
+.mobileoption {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  width: 100%;
+  max-width: 375px;
+  background-color: #6070ff;
+  height: 100%;
+  margin-left: -25px;
+  margin-top: -60px;
+  opacity: 0.96;
+}
+
+.closebutton {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  color: white;
+  height: 30px;
+  width: 30px;
+  margin-top: 72px;
+  margin-left: auto;
+  padding-right: 70px;
+  font-size: 32px;
+}
+
+.option {
+  list-style: none;
+}
+
+.optionlist {
+  display: flex;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+}
+
+/* add hovering for link and button */
+.closebutton :hover {
+  color: #67f30a;
+}
+
+.option > li :hover {
+  color: #67f30a;
+}
+
+/* popup windows for mobile and desktop */
+.popup {
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(0 0 0/ 50%);
+  cursor: pointer;
+}
+
+.popupdetail {
+  margin-top: 20px;
+  border-radius: 8px;
+  height: 695px;
+  padding-right: 4px;
+  padding-bottom: 0;
+}
+
+.popprojectdetail {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 15px;
+  height: 200px;
+  flex-grow: 4;
+  padding-right: 4px;
+  margin-top: -40px;
+}
+
+.poptitle {
+  font-size: 32px;
+  margin-bottom: 0;
+  line-height: 20px;
+  padding-bottom: 0;
+  height: 20px;
+  margin-top: 15px;
+}
+
+.popclient {
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 13px;
+  height: 16px;
+  margin-left: 3px;
+}
+
+.poppic {
+  margin-top: -20px;
+  margin-bottom: 0;
+}
+
+.poptag {
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  height: 24px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.pophr {
+  height: 0.01px;
+  width: 275px;
+  margin-left: 20px;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.popbuttongroup {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  height: 77px;
+}
+
+.popheader {
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+}
+
+.popclosebutton {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  color: #67798e;
+  height: 30px;
+  width: 30px;
+  margin-left: auto;
+  padding-right: 50px;
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+.popbutton {
+  margin-top: 20px;
+  margin-left: 14px;
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  width: 130px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #6070ff;
+  color: #396df2;
+  background-color: #fff;
+  text-decoration: none; /* Add this line to remove the underline */
+}
+
+/* implement works card button hover and active */
+.popbutton:hover {
+  color: #040b48;
+}
+
+.popbutton:active {
+  color: #ef1065;
+}
+
+.errormessasge {
+  color: #850f0f;
+  padding-top: 4px;
+  font-size: 15px;
+}

@@ -1,0 +1,98 @@
+.techstacklang,
+.techstacklang_1,
+.techstackframe,
+.techstackframe_1,
+.techstackskill,
+.techstackskill_1 {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+.rotate {
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(0deg);
+}
+
+.langicon,
+.skillicon,
+.frameicon {
+  cursor: pointer;
+}
+
+.icon-container {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotate .icon-container {
+  transform: rotate(90deg);
+}
+
+.rotate .fa-chevron-right {
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(0deg);
+}
+
+.rotate.rotate-90 .fa-chevron-right {
+  transform: rotate(90deg);
+}
+
+.langicon {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  transition: all 0.5s linear;
+  transform: rotate(0deg);
+}
+
+.frameicon {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  transition: all 0.5s linear;
+  transform: rotate(0deg);
+}
+
+.skillicon {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  transition: all 0.5s linear;
+  transform: rotate(0deg);
+}
+
+.langicon.down .rotate .fa-chevron-right {
+  transform: rotate(90deg);
+}
+
+.frameicon.down .rotate .fa-chevron-right {
+  transform: rotate(90deg);
+}
+
+.skillicon.down .rotate .fa-chevron-right {
+  transform: rotate(90deg);
+}
+
+.langicon.rotate {
+  transform: rotate(-90deg);
+}
+
+.langicon:hover .rotate {
+  transform: rotate(0deg);
+}
+
+.skillicon.rotate {
+  transform: rotate(90deg);
+}
+
+.skillicon:hover .rotate {
+  transform: rotate(0deg);
+}
+
+.frameicon.rotate {
+  transform: rotate(90deg);
+}
+
+.frameicon:hover .rotate {
+  transform: rotate(0deg);
+}
